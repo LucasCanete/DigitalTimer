@@ -79,8 +79,8 @@ void actual_time(){
 void check(){
   //checks whether out current time matches the time of the event
   DateTime now = rtc.now();
-  if (now.hour() == hora && now.minute() == minuto) digitalWrite(4,HIGH);
-  else if (now.hour() == end_hora && now.minute() == end_minuto) digitalWrite(4,LOW);
+  if (now.hour() == hora && now.minute() == minuto) digitalWrite(13,HIGH);
+  else if (now.hour() == end_hora && now.minute() == end_minuto) digitalWrite(13,LOW);
   
 } 
   void menu(){
